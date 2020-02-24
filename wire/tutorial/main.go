@@ -4,7 +4,7 @@ import "fmt"
 
 /*
 	Entire implement code for wire tutorial
-	https://github.com/google/wire/blob/master/JJ/README.md
+	https://github.com/google/wire/blob/master/_tutorial/README.md
 */
 
 type Message struct {
