@@ -1,6 +1,6 @@
 module github.com/RanchoCooper/go-by-demos
 
-go 1.12
+go 1.14
 
 require (
 	github.com/gin-gonic/gin v1.5.0
@@ -9,7 +9,8 @@ require (
 	github.com/go-xorm/xorm v0.7.10-0.20191015070349-f39e5d9bfdb7
 	github.com/golang/mock v1.3.2-0.20200114041001-e00cb15c9dfc
 	github.com/google/wire v0.4.0
-	github.com/kr/pretty v0.2.0 // indirect
+	github.com/jinzhu/gorm v1.9.12
+	github.com/kr/pretty v0.2.0
 	github.com/oleiade/reflections v1.0.0
 	xorm.io/core v0.7.2-0.20190928055935-90aeac8d08eb
 )
