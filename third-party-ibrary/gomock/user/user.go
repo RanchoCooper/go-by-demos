@@ -1,7 +1,7 @@
 package user
 
 import (
-	"github.com/RanchoCooper/go-by-demos/gomock/person"
+	"github.com/RanchoCooper/go-by-demos/third-party-ibrary/gomock/person"
 )
 
 type User struct {

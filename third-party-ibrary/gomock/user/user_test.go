@@ -4,8 +4,8 @@ import (
 	"testing"
 	
 	"github.com/golang/mock/gomock"
-	
-	"github.com/RanchoCooper/go-by-demos/gomock/mock"
+
+	"github.com/RanchoCooper/go-by-demos/third-party-ibrary/gomock/mock"
 )
 
 func TestUser_GetUserInfo(t *testing.T) {

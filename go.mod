@@ -15,7 +15,7 @@ require (
 	github.com/google/wire v0.4.0
 	github.com/jinzhu/gorm v1.9.12
 	github.com/kr/pretty v0.2.0 // indirect
-	github.com/oleiade/reflections v1.0.0
+	github.com/oleiade/reflections v1.0.0 // indirect
 	github.com/rs/xid v1.2.1 // indirect
 	xorm.io/core v0.7.2-0.20190928055935-90aeac8d08eb
 )
