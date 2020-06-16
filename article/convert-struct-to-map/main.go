@@ -4,18 +4,36 @@ import (
 	"encoding/json"
 	"fmt"
 	"reflect"
+<<<<<<< HEAD
 
 	"github.com/fatih/structs"
+=======
+>>>>>>> 09b1269... init
 )
 
 // 结构体转map[string]interface{}
 // origin https://mp.weixin.qq.com/s/Q_CqHQxDZMpjLNJTp5kfQg
 
+<<<<<<< HEAD
 type UserInfo struct {
 	Name string `json:"name"`
 	Age int `json:"age"`
 }
 
+=======
+type Profile struct {
+	Hobby string `json:"hobby" structs:"hobby"`
+}
+
+
+type UserInfo struct {
+	Name string `json:"name"`
+	Age int `json:"age"`
+	Profile `json:"profile" structs:"profile"`
+}
+
+
+>>>>>>> 09b1269... init
 // ToMap convert a single struct to map[string]interface{}
 func ToMap(in interface{}, tagName string) (map[string]interface{}, error) {
 	out := make(map[string]interface{})
@@ -40,12 +58,6 @@ func ToMap(in interface{}, tagName string) (map[string]interface{}, error) {
 	}
 	return out, nil
 }
-
-// ToMap2 convert a embeded struct to map[string]interface{}
-func ToMap2(in interface{}, tag string) (map[string]interface{}, error) {
-
-}
-
 
 func main() {
 	userInfo := UserInfo{
