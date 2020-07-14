@@ -12,6 +12,7 @@ require (
 	github.com/google/wire v0.4.0
 	github.com/jinzhu/gorm v1.9.12
 	golang.org/x/net v0.0.0-20200202094626-16171245cfb2
+	golang.org/x/sync v0.0.0-20190423024810-112230192c58
 	golang.org/x/sys v0.0.0-20191010194322-b09406accb47 // indirect
 	xorm.io/builder v0.3.7 // indirect
 )
