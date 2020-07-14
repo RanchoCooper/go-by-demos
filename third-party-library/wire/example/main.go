@@ -3,9 +3,9 @@ package main
 import (
 	"log"
 
-	"github.com/RanchoCooper/go-by-demos/third-party-ibrary/wire/example/db"
-	"github.com/RanchoCooper/go-by-demos/third-party-ibrary/wire/example/di"
-	"github.com/RanchoCooper/go-by-demos/third-party-ibrary/wire/example/service"
+	"github.com/RanchoCooper/go-by-demos/third-party-library/wire/example/db"
+	"github.com/RanchoCooper/go-by-demos/third-party-library/wire/example/di"
+	"github.com/RanchoCooper/go-by-demos/third-party-library/wire/example/service"
 )
 
 func main() {

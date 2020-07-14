@@ -20,6 +20,7 @@ type User struct {
 }
 
 func main() {
+	panic()
 	// 创建一个引擎
 	engine, err := xorm.NewEngine("mysql", "root@/test?charset=utf8")
 	if err != nil {
