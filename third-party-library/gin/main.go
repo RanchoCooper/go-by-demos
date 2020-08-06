@@ -57,3 +57,7 @@ func WebRoot(context *gin.Context) {
 	context.String(http.StatusOK, "hello, world")
 }
 
+// path中的参数
+func main2() {
+
+}
