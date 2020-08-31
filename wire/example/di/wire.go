@@ -6,8 +6,8 @@ import (
 
 	"github.com/google/wire"
 
-	"github.com/RanchoCooper/go-by-demos/third-party-library/wire/example/db"
-	"github.com/RanchoCooper/go-by-demos/third-party-library/wire/example/service"
+	"github.com/RanchoCooper/go-by-demos/wire/example/db"
+	"github.com/RanchoCooper/go-by-demos/wire/example/service"
 )
 
 func NewService(c *db.Config, m *service.MailConfig) (*service.Service, error) {

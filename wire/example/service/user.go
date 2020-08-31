@@ -23,7 +23,7 @@ func (u *UserRepo) AddUser() {
 }
 
 // NewUserRepo
-func NewUserRepo(db *sql.DB) *UserRepo{
+func NewUserRepo(db *sql.DB) *UserRepo {
 	return &UserRepo{}
 }
 

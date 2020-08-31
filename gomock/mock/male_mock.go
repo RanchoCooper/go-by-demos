@@ -5,8 +5,9 @@
 package male_mock
 
 import (
-	gomock "github.com/golang/mock/gomock"
-	reflect "reflect"
+	"reflect"
+
+	"github.com/golang/mock/gomock"
 )
 
 // MockMale is a mock of Male interface
