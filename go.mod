@@ -15,12 +15,14 @@ require (
 	github.com/golang/mock v1.3.2-0.20200114041001-e00cb15c9dfc
 	github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510 // indirect
 	github.com/google/wire v0.4.0
-	github.com/jinzhu/gorm v1.9.12
 	github.com/kardianos/govendor v1.0.9 // indirect
 	github.com/magiconair/properties v1.8.0
-	github.com/stretchr/testify v1.6.1 // indirect
+	github.com/mattn/go-sqlite3 v1.14.4 // indirect
+	github.com/stretchr/testify v1.6.1
 	golang.org/x/net v0.0.0-20200202094626-16171245cfb2
 	golang.org/x/sync v0.0.0-20190423024810-112230192c58
 	golang.org/x/sys v0.0.0-20191010194322-b09406accb47 // indirect
+	gorm.io/driver/sqlite v1.1.3
+	gorm.io/gorm v1.20.5
 	xorm.io/builder v0.3.7 // indirect
 )
