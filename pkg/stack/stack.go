@@ -11,6 +11,9 @@ type Stack struct {
 }
 
 func (s *Stack) Size() int {
+	s.lock.RLock()
+	defer s.lock.RUnlock()
+
 	return len(s.slice)
 }
 
@@ -41,5 +44,8 @@ func (s *Stack) Top() string {
 	if s.IsEmpty() {
 		return ""
 	}
+	s.lock.RLock()
+	defer s.lock.RUnlock()
+
 	return s.slice[len(s.slice) - 1]
 }
