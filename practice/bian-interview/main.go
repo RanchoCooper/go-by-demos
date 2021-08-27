@@ -60,7 +60,7 @@ func main1() {
 	fmt.Println(findK(nums, 8))
 }
 
-///////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////
 
 // [ 0, 1, 2, 3, 4]
 // [24,23,22,21, 5]
@@ -68,6 +68,7 @@ func main1() {
 // [11,17,18,19,20]
 // [10, 9, 8, 7, 6]
 
+// FIXME
 func getMaxRout(nums [][]int) int {
 	dx := []int{-1, 1, 0, 0}
 	dy := []int{0, 0, -1, 1}
@@ -75,15 +76,51 @@ func getMaxRout(nums [][]int) int {
 	x, y := 0, 0
 	max := math.MaxInt32
 	for i := 0; i < 4; i++ {
-		current := nums[x][y]
+		// current := nums[x][y]
 		next := nums[x + dx[i]][y + dy[i]]
 		if next <= max {
 			max = next
 		}
 	}
 
+	return max
+}
+
+// /////////////////////////////////////////////////////////////////////////////////
+
+func getSubArray(nums1, nums2 []int) []int {
+	if nums1 == nil || nums2 == nil {
+		return []int{}
+	}
+
+	if len(nums1) < len(nums2) {
+		nums1, nums2 = nums2, nums1
+	}
+
+	ans := make([]int, 0)
+	found := false
+	for i := 0; i < len(nums1); i++ {
+		for j := 0; j < len(nums2); j++ {
+			if nums1[i] != nums2[j] {
+				continue
+			}
+
+			found = true
+			for nums1[i] == nums2[j] && j < len(nums2){
+				ans = append(ans, nums2[j])
+				j++
+			}
+			if found {
+				break
+			}
+		}
+		if found {
+			break
+		}
+	}
+	return ans
 }
 
 func main() {
-
+	fmt.Println(getSubArray([]int{1, 2, 3, 4, 5, 6, 8, 9}, []int{2, 8, 9}))
 }

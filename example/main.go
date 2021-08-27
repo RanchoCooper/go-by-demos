@@ -1,5 +1,7 @@
 package main
 
-func main() {
+import "sync"
 
+func main() {
+	sync.Map{}
 }
