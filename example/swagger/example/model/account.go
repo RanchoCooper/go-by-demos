@@ -1,10 +1,10 @@
 package model
 
 import (
-	"errors"
-	"fmt"
+    "errors"
+    "fmt"
 
-	uuid "github.com/gofrs/uuid"
+    "github.com/gofrs/uuid"
 )
 
 // Account example
