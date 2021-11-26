@@ -19,6 +19,7 @@ require (
 	github.com/swaggo/gin-swagger v1.3.1
 	github.com/swaggo/swag v1.7.1
 	github.com/swaggo/swag/example/celler v0.0.0-20210906081723-523e046f2918
+	github.com/urfave/cli/v2 v2.3.0
 	go.uber.org/ratelimit v0.2.0
 	golang.org/x/net v0.0.0-20210916014120-12bc252f5db8 // indirect
 	golang.org/x/sys v0.0.0-20210915083310-ed5796bab164 // indirect
