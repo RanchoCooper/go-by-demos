@@ -2,11 +2,11 @@ package main
 
 import (
     "context"
+    "encoding/json"
     "fmt"
     "log"
     "time"
 
-    "github.com/spf13/cast"
     "go.etcd.io/etcd/api/v3/v3rpc/rpctypes"
     "go.etcd.io/etcd/clientv3"
 )
@@ -28,7 +28,7 @@ func main() {
 
     ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
     defer cancel()
-    resp, err := cli.Put(ctx, "rancho", "cooper")
+    putResp, err := cli.Put(ctx, "rancho", "cooper")
     if err != nil {
         switch err {
         case context.Canceled:
@@ -41,5 +41,21 @@ func main() {
             log.Fatalf("bad cluster endpoints, which are not etcd servers: %v", err)
         }
     }
-    fmt.Println(cast.ToString(resp))
+    b, _ := json.MarshalIndent(putResp, "", "    ")
+    fmt.Println(string(b))
+    getResp, err := cli.Get(ctx, "rancho")
+    if err != nil {
+        switch err {
+        case context.Canceled:
+            log.Fatalf("ctx is canceled by another routine: %v", err)
+        case context.DeadlineExceeded:
+            log.Fatalf("ctx is attached with a deadline is exceeded: %v", err)
+        case rpctypes.ErrEmptyKey:
+            log.Fatalf("client-side error: %v", err)
+        default:
+            log.Fatalf("bad cluster endpoints, which are not etcd servers: %v", err)
+        }
+    }
+    b2, _ := json.MarshalIndent(getResp, "", "    ")
+    fmt.Println(string(b2))
 }
