@@ -2,6 +2,7 @@ package util
 
 import (
     "math/rand"
+    "regexp"
     "sort"
 )
 
@@ -9,6 +10,47 @@ import (
  * @author Rancho
  * @date 2021/12/15
  */
+
+const (
+    AsciiLowercase = "abcdefghijklmnopqrstuvwxyz"
+    AsciiUppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    AsciiLetters   = AsciiLowercase + AsciiUppercase
+    Digits         = "0123456789"
+    // HexDigits = Digits + "abcdef" + "ABCDEF"
+    // OctDigits = "01234567"
+    // Punctuation = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
+)
+
+func IsDigits(s string) bool {
+    if len(s) == 0 {
+        return false
+    }
+    if s[0] == '-' || s[0] == '+' {
+        s = s[1:]
+    }
+    reg := regexp.MustCompile(`^[0-9]+$`)
+    return reg.MatchString(s)
+}
+
+func IsAllowedString(s string) bool {
+    reg := regexp.MustCompile(`^[0-9a-zA-Z_-]+$`)
+    return reg.MatchString(s)
+}
+
+// RandString returns random string.
+func RandString(length int, isDigital bool) string {
+    var char string
+    if isDigital {
+        char = Digits
+    } else {
+        char = AsciiLetters + Digits
+    }
+    bytes := make([]byte, length)
+    for i := 0; i < length; i++ {
+        bytes[i] = char[rand.Intn(len(char)-1)]
+    }
+    return string(bytes)
+}
 
 // RandPickWithExcept random pick n number in range range_ return inorder
 func RandPickWithExcept(range_ int, n int, m []int) *[]int {
