@@ -52,7 +52,6 @@ require (
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/golang/snappy v0.0.0-20180518054509-2e65f85255db // indirect
 	github.com/google/uuid v1.1.2 // indirect
-	github.com/google/wire v0.5.0 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.1 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
@@ -75,7 +74,6 @@ require (
 	github.com/russross/blackfriday/v2 v2.0.1 // indirect
 	github.com/shirou/gopsutil/v3 v3.21.6 // indirect
 	github.com/shurcooL/sanitized_anchor_name v1.0.0 // indirect
-	github.com/spf13/cast v1.4.1 // indirect
 	github.com/tklauser/go-sysconf v0.3.6 // indirect
 	github.com/tklauser/numcpus v0.2.2 // indirect
 	github.com/ugorji/go/codec v1.1.13 // indirect
