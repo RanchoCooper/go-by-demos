@@ -274,4 +274,5 @@ fabric.properties
 # End of https://www.toptal.com/developers/gitignore/api/intellij,go
 
 example/go-hexagonal
+example/go-classical
 example/main.go
