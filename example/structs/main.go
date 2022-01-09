@@ -4,7 +4,7 @@ import (
     "fmt"
     "net/http"
 
-    "github.com/fatih/structs"
+    "github.com/RanchoCooper/structs"
 )
 
 /**
@@ -14,7 +14,7 @@ import (
 
 type Server struct {
     Name        string `json:"name,omitempty"`
-    ID          int
+    ID          int    `structs:"ididid"`
     Enabled     bool
     users       []string // not exported
     http.Server          // embedded
