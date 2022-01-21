@@ -3,7 +3,7 @@ module github.com/RanchoCooper/go-by-demos
 go 1.17
 
 require (
-	github.com/RanchoCooper/structs v1.1.1
+	github.com/RanchoCooper/structs v1.2.0
 	github.com/Shopify/sarama v1.19.0
 	github.com/alibaba/sentinel-golang v1.0.3
 	github.com/gin-gonic/gin v1.7.0
@@ -62,6 +62,7 @@ require (
 	github.com/mattn/go-isatty v0.0.12 // indirect
 	github.com/mattn/go-sqlite3 v1.14.6 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.1 // indirect
+	github.com/mitchellh/mapstructure v1.4.3 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.1 // indirect
 	github.com/pierrec/lz4 v2.0.5+incompatible // indirect
