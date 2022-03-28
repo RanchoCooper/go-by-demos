@@ -8,8 +8,10 @@ require (
 	github.com/alibaba/sentinel-golang v1.0.3
 	github.com/gin-gonic/gin v1.7.0
 	github.com/go-ini/ini v1.62.0
+	github.com/go-playground/validator/v10 v10.4.1
 	github.com/gofrs/uuid v3.3.0+incompatible
 	github.com/jinzhu/copier v0.3.4
+	github.com/mitchellh/mapstructure v1.4.3
 	github.com/stretchr/testify v1.7.0
 	github.com/swaggo/files v0.0.0-20210815190702-a29dd2bc99b2
 	github.com/swaggo/gin-swagger v1.3.1
@@ -36,7 +38,6 @@ require (
 	github.com/coreos/pkg v0.0.0-20160727233714-3ac0863d7acf // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.0-20190314233015-f79a8a8ca69d // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
 	github.com/eapache/go-resiliency v1.1.0 // indirect
 	github.com/eapache/go-xerial-snappy v0.0.0-20180814174437-776d5712da21 // indirect
 	github.com/eapache/queue v1.1.0 // indirect
@@ -48,7 +49,6 @@ require (
 	github.com/go-openapi/swag v0.19.15 // indirect
 	github.com/go-playground/locales v0.13.0 // indirect
 	github.com/go-playground/universal-translator v0.17.0 // indirect
-	github.com/go-playground/validator/v10 v10.4.1 // indirect
 	github.com/go-sql-driver/mysql v1.5.0 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
@@ -64,7 +64,6 @@ require (
 	github.com/mattn/go-isatty v0.0.12 // indirect
 	github.com/mattn/go-sqlite3 v1.14.6 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.1 // indirect
-	github.com/mitchellh/mapstructure v1.4.3 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.1 // indirect
 	github.com/pierrec/lz4 v2.0.5+incompatible // indirect
@@ -98,7 +97,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
 )
 
-replace (
-	google.golang.org/grpc v1.32.0 => google.golang.org/grpc v1.26.0
-	google.golang.org/grpc v1.38.0 => google.golang.org/grpc v1.26.0
-)
+replace google.golang.org/grpc v1.38.0 => google.golang.org/grpc v1.26.0
