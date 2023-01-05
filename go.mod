@@ -10,6 +10,7 @@ require (
 	github.com/go-ini/ini v1.62.0
 	github.com/go-playground/validator/v10 v10.4.1
 	github.com/gofrs/uuid v3.3.0+incompatible
+	github.com/google/wire v0.5.0
 	github.com/jinzhu/copier v0.3.4
 	github.com/mitchellh/mapstructure v1.4.3
 	github.com/stretchr/testify v1.7.0
