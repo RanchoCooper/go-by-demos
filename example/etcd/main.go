@@ -30,6 +30,8 @@ func main() {
 	defer cancel()
 	putResp, err := cli.Put(ctx, "rancho", "cooper")
 	if err != nil {
+		fmt.Println()
+		fmt.Println(err.Error())
 		switch err {
 		case context.Canceled:
 			log.Fatalf("ctx is canceled by another routine: %v", err)
@@ -42,6 +44,7 @@ func main() {
 		}
 	}
 	b, _ := json.MarshalIndent(putResp, "", "    ")
+	fmt.Println("Response of `put rancho-cooper`: ")
 	fmt.Println(string(b))
 	getResp, err := cli.Get(ctx, "rancho")
 	if err != nil {
@@ -57,5 +60,8 @@ func main() {
 		}
 	}
 	b2, _ := json.MarshalIndent(getResp, "", "    ")
+	fmt.Println("Response of `get rancho`: ")
 	fmt.Println(string(b2))
+	fmt.Println("Kvs: ")
+	fmt.Println(getResp.Kvs)
 }
