@@ -6,11 +6,10 @@ require (
 	github.com/RanchoCooper/structs v1.2.0
 	github.com/Shopify/sarama v1.19.0
 	github.com/alibaba/sentinel-golang v1.0.3
-	github.com/gin-gonic/gin v1.7.0
+	github.com/gin-gonic/gin v1.7.7
 	github.com/go-ini/ini v1.62.0
 	github.com/go-playground/validator/v10 v10.4.1
 	github.com/gofrs/uuid v3.3.0+incompatible
-	github.com/google/wire v0.5.0
 	github.com/jinzhu/copier v0.3.4
 	github.com/mitchellh/mapstructure v1.4.3
 	github.com/stretchr/testify v1.8.1
