@@ -10,6 +10,7 @@ require (
 	github.com/go-ini/ini v1.62.0
 	github.com/go-playground/validator/v10 v10.14.1
 	github.com/gofrs/uuid v3.3.0+incompatible
+	github.com/google/uuid v1.3.0
 	github.com/jinzhu/copier v0.3.4
 	github.com/mitchellh/mapstructure v1.4.3
 	github.com/stretchr/testify v1.8.3
@@ -63,7 +64,6 @@ require (
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/golang/snappy v0.0.3 // indirect
 	github.com/google/btree v1.1.2 // indirect
-	github.com/google/uuid v1.3.0 // indirect
 	github.com/gorilla/websocket v1.5.0 // indirect
 	github.com/grpc-ecosystem/go-grpc-middleware v1.3.0 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
