@@ -6,16 +6,20 @@ require (
 	cloud.google.com/go/firestore v1.15.0
 	firebase.google.com/go v3.13.0+incompatible
 	github.com/RanchoCooper/structs v1.1.0
+	github.com/agiledragon/gomonkey/v2 v2.12.0
 	github.com/alibaba/sentinel-golang v1.0.3
+	github.com/deckarep/golang-set/v2 v2.6.0
 	github.com/gin-gonic/gin v1.9.1
 	github.com/go-playground/validator/v10 v10.14.1
 	github.com/gofrs/uuid v4.0.0+incompatible
 	github.com/google/uuid v1.6.0
+	github.com/gorilla/websocket v1.5.3
 	github.com/hibiken/asynq v0.24.1
 	github.com/jackc/pgx/v5 v5.5.4
 	github.com/jinzhu/copier v0.3.4
 	github.com/lib/pq v1.10.9
 	github.com/mitchellh/mapstructure v1.4.3
+	github.com/pkg/errors v0.9.1
 	github.com/slack-go/slack v0.13.0
 	github.com/stretchr/testify v1.9.0
 	github.com/swaggo/files v0.0.0-20210815190702-a29dd2bc99b2
@@ -54,7 +58,6 @@ require (
 	github.com/cpuguy83/dockercfg v0.3.2 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/deckarep/golang-set/v2 v2.6.0 // indirect
 	github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f // indirect
 	github.com/distribution/reference v0.6.0 // indirect
 	github.com/docker/docker v27.1.1+incompatible // indirect
@@ -107,7 +110,6 @@ require (
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/opencontainers/image-spec v1.1.0 // indirect
 	github.com/pelletier/go-toml/v2 v2.0.8 // indirect
-	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/power-devops/perfstat v0.0.0-20210106213030-5aafc221ea8c // indirect
 	github.com/prometheus/client_golang v1.14.0 // indirect
