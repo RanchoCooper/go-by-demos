@@ -68,25 +68,26 @@ func main() {
 		fmt.Println("Error initializing Firebase app:", err)
 		return
 	}
-	client, err := app.Auth(context.Background())
-	client.GetUsers(context.Background())
-	client.Users()
-	// firestoreClient, err := app.Firestore(context.Background())
-	// email := NewMail(firestoreClient)
-	//
-	// ctx := context.Background()
-	// docSnapshot, err := email.db.Collection(mailTableName).Doc("CcL4VSsVMtP3A28FYcCl").Get(ctx)
-	// data := docSnapshot.Data()
-	// if _, ok := data["delivery"]; ok {
-	// 	fmt.Println(data["delivery"])
-	// 	if _, ok := data["delivery"].(map[string]interface{})["state"]; ok {
-	// 		if data["delivery"].(map[string]interface{})["state"] == "SUCCESS" {
-	// 			fmt.Println("current email is Success")
-	// 		}
-	// 	}
-	// }
-	// if err != nil {
-	// 	fmt.Println("err: ", err)
-	// 	return
-	// }
+	// client, err := app.Auth(context.Background())
+	// client.GetUsers(context.Background())
+	// client.Users()
+
+	firestoreClient, err := app.Firestore(context.Background())
+	email := NewMail(firestoreClient)
+
+	ctx := context.Background()
+	docSnapshot, err := email.db.Collection(mailTableName).Doc("CcL4VSsVMtP3A28FYcCl").Get(ctx)
+	data := docSnapshot.Data()
+	if _, ok := data["delivery"]; ok {
+		fmt.Println(data["delivery"])
+		if _, ok := data["delivery"].(map[string]interface{})["state"]; ok {
+			if data["delivery"].(map[string]interface{})["state"] == "SUCCESS" {
+				fmt.Println("current email is Success")
+			}
+		}
+	}
+	if err != nil {
+		fmt.Println("err: ", err)
+		return
+	}
 }
