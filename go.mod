@@ -23,6 +23,7 @@ require (
 	github.com/lib/pq v1.10.9
 	github.com/mitchellh/mapstructure v1.5.0
 	github.com/olahol/melody v1.2.1
+	github.com/panjf2000/ants/v2 v2.10.0
 	github.com/pkg/errors v0.9.1
 	github.com/slack-go/slack v0.15.0
 	github.com/spf13/viper v1.19.0
@@ -168,7 +169,7 @@ require (
 	golang.org/x/exp v0.0.0-20230905200255-921286631fa9 // indirect
 	golang.org/x/net v0.31.0 // indirect
 	golang.org/x/oauth2 v0.24.0 // indirect
-	golang.org/x/sync v0.9.0 // indirect
+	golang.org/x/sync v0.10.0 // indirect
 	golang.org/x/sys v0.27.0 // indirect
 	golang.org/x/text v0.20.0 // indirect
 	golang.org/x/time v0.8.0 // indirect
